@@ -1,0 +1,11 @@
+# 构建产物
+*.exe
+*.pdb
+dist/
+
+# 系统 / IDE
+Thumbs.db
+desktop.ini
+.vs/
+*.user
+*.suo

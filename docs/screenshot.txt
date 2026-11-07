@@ -1,0 +1,5 @@
+form.Bounds={X=64,Y=64,Width=1804,Height=958}
+windowRect=1804x958
+client={Width=1786, Height=911}
+Theme.Scale=1.25
+screen={X=0,Y=0,Width=1920,Height=1080} work={X=0,Y=0,Width=1920,Height=1020}
