@@ -1,11 +1,11 @@
 ﻿; LumaRoom · 安装程序（Inno Setup 6）
 ; 页面结构与选项由 common.iss 统一提供；这里只声明应用身份与要安装的文件。
-; 构建：installer\build-setup.cmd   产物：dist\LumaRoom-Setup-1.1.0.exe
+; 构建：installer\build-setup.cmd   产物：dist\LumaRoom-Setup-1.2.0.exe
 
 #define AppName "LumaRoom"
 #define AppSlug "LumaRoom"
 #define DirName "LumaRoom"
-#define AppVersion "1.1.0"
+#define AppVersion "1.2.0"
 #define AppId "{{C4D81F62-0A37-4B9E-8F25-7B3E6C19A082}"
 #define AppExe "LumaRoom.exe"
 #define AppRepo "LumaRoom"

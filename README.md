@@ -99,7 +99,7 @@ LumaRoom.exe "D:\photos\DSC_0421.NEF"
 
 只想双击 exe 用，跳过本节即可。要装进系统（开始菜单 / 卸载项 / 快捷方式），用安装包：
 
-**LumaRoom-Setup-1.1.0.exe** —— Inno Setup 6 构建的向导式安装包，页面顺序固定：
+**LumaRoom-Setup-1.2.0.exe** —— Inno Setup 6 构建的向导式安装包，页面顺序固定：
 
 > 欢迎 → 许可协议（MIT）→ 安装位置 → 附加任务 → 准备安装 → 安装进度 → 完成
 
@@ -112,7 +112,7 @@ LumaRoom.exe "D:\photos\DSC_0421.NEF"
 静默安装 / 卸载（脚本分发用）：
 
 ```bat
-LumaRoom-Setup-1.1.0.exe /VERYSILENT /SUPPRESSMSGBOXES /TASKS="desktopicon,startmenuicon"
+LumaRoom-Setup-1.2.0.exe /VERYSILENT /SUPPRESSMSGBOXES /TASKS="desktopicon,startmenuicon"
 "%LOCALAPPDATA%\Programs\LumaRoom\unins000.exe" /VERYSILENT
 ```
 

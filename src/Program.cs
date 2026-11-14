@@ -25,6 +25,11 @@ namespace LumaRoom
         [STAThread]
         private static int Main(string[] args)
         {
+            // 「发现新版本」检查：命令行开关 + 无人值守 probe
+            UpdateKit.UpdateCheck.Configure(args);
+            int? probeExit = UpdateKit.UpdateCheck.TryProbe(args);
+            if (probeExit.HasValue) return probeExit.Value;
+
             // head-less verification mode
             if (args != null && args.Length >= 2 && args[0] == "--selftest")
                 return SelfTest.Run(args[1]);
@@ -68,6 +73,7 @@ namespace LumaRoom
             if (shotPath != null)
                 form.Shown += delegate { StartShot(form, shotPath); };
 
+            UpdateKit.UpdatePrompt.ScheduleAutoCheck(form);
             Application.Run(form);
             Theme.Shutdown();
             return 0;
